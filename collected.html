@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fabulous</title>
+    <link rel="shortcut icon" type="image/ico" href="./images/favicon_created_by_logaster.ico"/>
+    <!-- CSS文件載入 -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- js文件載入 -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- header/start -->
+<header class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="index.html">
+            <img src="./images/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <div id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <!-- .dropdown-menu 下拉選單內容 -->
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      首頁</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="index.html">最新消息</a>
+                        <a class="dropdown-item" href="about us.html">關於我們</a>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href=" your music.html"> 你的音樂庫 </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="music style.html"> 音樂風格 </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Community.html"> 社群 </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=" help.html"> 幫助 </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=" Premium.html"> Premium </a>
+                    </li>
+                </ul>
+            </div>
+                <div class="col-xs-6 col-sm-2">
+                    <a href="login.html" class="btn btn-outline-warning my-2 text-success my-sm-0"> 登入 / 註冊 </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+    <!-- header/end -->
+    <section class="page-content">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <!-- 音樂庫/start -->
+                <div class="col-12 col-md-9">
+                    <div class="row">
+                        <div class="container-fluid">
+                            <h1>已收藏的歌曲</h1>
+                            <h5>魔音傳腦揮之不去</h5>
+                        </div>
+                        <!-- 排序/start -->
+                        <div class="col-12 mb-3">
+                            <p class="d-inline-block"> 顯示 1 筆結果中的 2 筆 </p>
+                            <form action="" class="d-inline-block float-right" >
+                                <select id="ProductSelect" class="form-control">
+                                    <option> 依上架時間 </option>
+                                    <option> 依熱銷度 </option>
+                                </select>
+                            </form>
+                        </div>
+                        <!-- 排序/end -->
+                        <!-- 商品/start -->
+                        <div class="card">
+                            <img class="card-img-top" src="./images/rgb.jpg"alt="rgb">
+                            <div class="card-body">
+                                <h4 class="card-title">YOASOBI 「三原色」</h4>
+                                <p class="card-text">貼心提醒:記得調聲音</p>
+                                <audio controls>
+                                  <source src="./music/YOASOBI「三原色」.mp3">
+                                </audio>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="./images/album pic1.png"alt="TUM-CL-B-0001">
+                            <div class="card-body">
+                                <h4 class="card-title">淡水的淡水魚</h4>
+                                <p class="card-text">貼心提醒:記得調聲音</p>
+                                <audio controls>
+                                  <source src="./music/黃美婷 Meiting【淡水的淡水魚 The Freshwater Fish of Tamsui】.mp3">
+                                </audio>
+                            </div>
+                        </div>
+                        <!-- 商品/end -->
+                        <!-- 分頁/start -->
+                            <div class="col-12 mt-3 mb-5">
+                                <nav aria-label="Page navigation product">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">1</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- 分頁/end -->
+                    </div>
+                </div>                        
+                <!-- 商品區/end -->
+                <!-- 側邊欄/start -->
+                <div class="col-12 col-md-3">
+                    <div class="row">
+                        <!-- 搜尋/start -->
+                        <div class="col-12 mb-5">
+                            <form action="">
+                                <input type="text" class="form-control" id="PorductSearch" placeholder=" 搜尋 ...">
+                            </form>
+                        </div>
+                        <!-- 搜尋/end -->
+                        <!-- 音樂分類/start -->
+                        <div class="col-12 mb-5">
+                            <h4 class="title-color"> 音樂分類 </h4>
+                            <ul class="sidebar-product-category">
+                                <li>
+                                    <a href="Recently played.html"> 最近播放 </a>
+                                </li>
+                                <li>
+                                    <a href="collected.html"> 已收藏的歌曲 </a>
+                                </li>
+                                <li>
+                                    <a href="Album.html"> 專輯 </a>
+                                </li>
+                                <li>
+                                    <a href="artist.html"> 藝人 </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 音樂分類/end -->
+                    </div>
+                </div>
+                <!-- 側邊欄/end -->
+            </div>
+        </div>
+    </section>
+    <!-- 音樂庫/end -->
+    <!-- 頁腳/end -->
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip({trigger: "click"});
+        })
+    </script>
+</body>
+    </section>
+    <!-- 頁腳/start -->
+    <footer class="footer bg-dark text-white">
+        <marquee direction="right" scrolldelay="60" class="position-absolute">
+        <a href="index.html" target="_blank" data-ga-on="click" data-ga-event-category="click" data-ga-event-action="cat run">
+            <img src="https://akstatic.streetvoice.com/asset/images/sv-cat.gif" width="20" height="28" border="0">
+        </a>
+        </marquee>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h3>關於</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="about us.html">關於Fabulous</a></li>
+                        <li><a href="index.html">最新消息</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <h3>社群</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="https://reurl.cc/ogQvr3" target="_blank">Insta</a></li>
+                        <li><a href="https://reurl.cc/W33dRL" target="_blank">FB</a></li>
+                        <li><a href="https://reurl.cc/Q9bNbO" target="_blank">Tiwwter</a></li>
+                    </ul>
+                    <p class="text-white"><small>Copyright © 2021-2021 Fabulous.</small></p>
+                </div>
+                <div class="col-sm">
+                    <h3>幫助</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="help.html">使用</a></li>
+                        <li><a href="help.html">帳戶&付款</a></li>
+                        <li><a href="help.html">常見問題</a></li>
+                        <li><a href="https://discord.gg/jYTD3NX3wV" target="_blank">線上客服</a></li>
+                    </ul>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
